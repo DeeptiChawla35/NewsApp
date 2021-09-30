@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FreeMealCell" reuseIdentifier="NewsCell" id="iV7-Ix-jkb" customClass="NewsCell" customModule="Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-Ng-8za">
+                        <rect key="frame" x="12" y="12" width="168" height="127"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaR-u3-bMW">
+                        <rect key="frame" x="0.0" y="147" width="192" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIY-ry-Tea">
+                                <rect key="frame" x="12" y="6" width="118" height="17"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dg-xb-Tpz">
+                                <rect key="frame" x="12" y="25" width="118" height="15.5"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="11"/>
+                                <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynf-7a-Bvk">
+                                <rect key="frame" x="160" y="10.5" width="20" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="KNd-l0-71f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.14509803921568626" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Dg-xb-Tpz" firstAttribute="top" secondItem="HIY-ry-Tea" secondAttribute="bottom" constant="2" id="94N-Ua-NwX"/>
+                            <constraint firstAttribute="trailing" secondItem="Ynf-7a-Bvk" secondAttribute="trailing" constant="12" id="9T9-sa-8HP"/>
+                            <constraint firstItem="6Dg-xb-Tpz" firstAttribute="leading" secondItem="HIY-ry-Tea" secondAttribute="leading" id="M2X-f5-pkY"/>
+                            <constraint firstItem="6Dg-xb-Tpz" firstAttribute="trailing" secondItem="HIY-ry-Tea" secondAttribute="trailing" id="WQr-LB-qu0"/>
+                            <constraint firstItem="HIY-ry-Tea" firstAttribute="top" secondItem="vaR-u3-bMW" secondAttribute="top" constant="6" id="WfV-Yg-IcS"/>
+                            <constraint firstItem="Ynf-7a-Bvk" firstAttribute="leading" secondItem="HIY-ry-Tea" secondAttribute="trailing" constant="30" id="Zn1-jv-LKQ"/>
+                            <constraint firstItem="HIY-ry-Tea" firstAttribute="leading" secondItem="vaR-u3-bMW" secondAttribute="leading" constant="12" id="gHC-5d-DWo"/>
+                            <constraint firstAttribute="height" constant="50" id="qyf-Xk-t8l"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IB-SU-qba">
+                        <rect key="frame" x="135" y="154.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="G2d-Mz-U5x"/>
+                            <constraint firstAttribute="width" constant="20" id="b2u-3p-vLx"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="hand.thumbsup" catalog="system"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hDg-58-173"/>
+            <color key="backgroundColor" red="0.14117647058823529" green="0.14509803921568626" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vaR-u3-bMW" secondAttribute="bottom" id="15W-u3-OIF"/>
+                <constraint firstItem="4IB-SU-qba" firstAttribute="centerY" secondItem="HIY-ry-Tea" secondAttribute="centerY" constant="3" id="Cak-t6-nMi"/>
+                <constraint firstItem="TPD-Ng-8za" firstAttribute="top" secondItem="iV7-Ix-jkb" secondAttribute="top" constant="12" id="IiB-xB-4dw"/>
+                <constraint firstItem="Ynf-7a-Bvk" firstAttribute="leading" secondItem="4IB-SU-qba" secondAttribute="trailing" constant="5" id="Ioq-0B-AJO"/>
+                <constraint firstItem="Ynf-7a-Bvk" firstAttribute="centerY" secondItem="4IB-SU-qba" secondAttribute="centerY" id="XuA-Yh-VYO"/>
+                <constraint firstItem="TPD-Ng-8za" firstAttribute="leading" secondItem="iV7-Ix-jkb" secondAttribute="leading" constant="12" id="aDN-u9-6Bb"/>
+                <constraint firstAttribute="trailing" secondItem="TPD-Ng-8za" secondAttribute="trailing" constant="12" id="blk-CM-8Ow"/>
+                <constraint firstAttribute="trailing" secondItem="vaR-u3-bMW" secondAttribute="trailing" id="cHz-Ae-0No"/>
+                <constraint firstItem="vaR-u3-bMW" firstAttribute="top" secondItem="TPD-Ng-8za" secondAttribute="bottom" constant="8" id="ceA-rV-6VN"/>
+                <constraint firstItem="vaR-u3-bMW" firstAttribute="leading" secondItem="iV7-Ix-jkb" secondAttribute="leading" id="kAJ-Xf-wnr"/>
+            </constraints>
+            <size key="customSize" width="192" height="197"/>
+            <connections>
+                <outlet property="imageView" destination="TPD-Ng-8za" id="YgW-Ju-era"/>
+                <outlet property="likeButton" destination="4IB-SU-qba" id="4tI-n2-bOJ"/>
+                <outlet property="likeCountLabel" destination="Ynf-7a-Bvk" id="XlS-il-tsU"/>
+                <outlet property="newsDescription" destination="6Dg-xb-Tpz" id="rCy-19-hAE"/>
+                <outlet property="newsName" destination="HIY-ry-Tea" id="teX-W3-FeY"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="61.272321428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
+    </resources>
+</document>
